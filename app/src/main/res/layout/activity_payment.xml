@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment"
+    android:background="@drawable/paym">
+
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="60dp"
+        android:id="@+id/spinner"
+        ></Spinner>
+    <EditText
+        android:id="@+id/amount_et"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:hint="Amount"
+        android:textColorHint="#000"
+
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/upi_id"
+        android:layout_width="365dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/amount_et"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="UPI ID"
+        android:text="amitak22jan@okhdfcbank"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="353dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/upi_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Name"
+        android:text="Relief Fund"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="367dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Note"
+        android:text="Disaster Fund"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/note"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bu"
+        android:text="send by upi"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="57dp"
+        android:text="PAYMENT GATEWAY"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textFontWeight="500"/>
+
+
+</RelativeLayout>

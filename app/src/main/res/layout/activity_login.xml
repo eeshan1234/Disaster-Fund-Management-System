@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/ak4"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="297dp"
+        android:layout_height="269dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/l" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+
+        android:orientation="vertical"
+        android:padding="27dp">
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="10"
+            android:textColor="#000"
+            android:hint="Enter phone"
+            android:textColorHint="@android:color/black"
+            android:paddingTop="35dp"
+            android:inputType="" />
+
+        <Button
+            android:id="@+id/buttonGetVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Verification Code"
+            android:background="@drawable/butt"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#000"
+            android:digits="0123456789"
+            android:hint="Enter code received"
+            android:textColorHint="@android:color/black"
+
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:background="@drawable/butt"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="Log IN" />
+    </LinearLayout>
+
+</RelativeLayout>
